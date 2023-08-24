@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Colvin First Project</title>
+    <script src="bootstrap.js"></script>
+    <link href="bootstrap.css" rel="stylesheet">
+</head>
+
+<body style="background-color: white;">
+    <div class="container d-flex justify-content-center flex-column align-items-center mt-5">
+        <div style="background-color: white; padding-left: 20px;border: 10px;margin: 0px;">
+
+
+        </div>
+        <h6>Bootstrap and JS/Query Worksheet</h6><br />
+        <h4 style="text-decoration: underline; margin-bottom: 25px; margin-top: 40px">
+            Week 0 Class Work
+        </h4>
+    </div>
+
+    <div class="d-flex justify-content-around">
+        <div class="" id="box1"
+            style="width: 200px; height: 200px; background-color: red; border: 3px solid black; margin-right: -590px">
+        </div>
+
+        <div class="" id="box2"
+            style="width: 200px; height: 200px; background-color: blue; border: 3px dashed yellow; margin-right: -5px">
+        </div>
+
+        <div class="" id="box3"
+            style="width: 200px; height: 200px; background-color: green; border: 3px solid purple; margin-left: -590px">
+        </div>
+    </div>
+
+    <div class="mt-3 d-flex justify-content-center">
+        <p style="color: green; text-decoration: underline;">Change Buttons</p>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="mt-3 d-flex justify-content-around" style="width: 33%;">
+            <button onclick="changeBoxOneColor()">Change box 1</button>
+            <button onclick="changeBoxTwoColor()">Change box 2</button>
+            <button onclick="changeBoxThreeColor()">Change box 3</button>
+            <button onclick="changeAllColor()">Change All</button>
+        </div>
+    </div>
+
+    <div class="mt-3 d-flex justify-content-center">
+        <p style="color: red; text-decoration: underline; font-size: 12px">Hide Buttons</p>
+    </div>
+
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="mt-3 d-flex justify-content-around" style="width: 33%;">
+            <button onclick="hideBoxOne()">Hide box 1</button>
+            <button onclick="hideBoxTwo()">Hide box 2</button>
+            <button onclick="hideBoxThree()">Hide box 3</button>
+            <button onclick="hideAll()">Hide All</button>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="mt-3 d-flex justify-content-around" style="width: 50%;">
+            <button onclick="resetColors()">Reset Colors</button>
+            <button onclick="showAll()">Show All</button>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script>
+        function changeBoxOneColor() {
+            document.getElementById("box1").style.backgroundColor = "pink";
+            document.getElementById("box1").style.borderColor = "orange";
+        }
+
+        function changeBoxTwoColor() {
+            document.getElementById("box2").style.backgroundColor = "white"
+            document.getElementById("box2").style.borderColor = "pink";
+        }
+
+        function changeBoxThreeColor() {
+            document.getElementById("box3").style.backgroundColor = "black"
+            document.getElementById("box3").style.borderColor = "yellow";
+        }
+
+        function changeAllColor() {
+            document.getElementById(changeAllColor)
+            document.getElementById("box1").style.backgroundColor = "pink"
+            document.getElementById("box2").style.backgroundColor = "white"
+            document.getElementById("box3").style.backgroundColor = "black"
+        }
+
+        function hideBoxOne() {
+            document.getElementById("box1").style.visibility = "hidden"
+        }
+
+        function hideBoxTwo() {
+            document.getElementById("box2").style.visibility = "hidden"
+        }
+
+        function hideBoxThree() {
+            document.getElementById("box3").style.visibility = "hidden"
+        }
+
+        function hideAll() {
+            document.getElementById("box1").style.visibility = "hidden"
+            document.getElementById("box2").style.visibility = "hidden"
+            document.getElementById("box3").style.visibility = "hidden"
+        }
+
+        function resetColors() {
+            document.getElementById("box1").style.backgroundColor = "red"
+            document.getElementById("box1").style.borderColor = "black"
+            document.getElementById("box2").style.backgroundColor = "blue"
+            document.getElementById("box2").style.borderColor = "yellow"
+            document.getElementById("box3").style.backgroundColor = "green"
+            document.getElementById("box3").style.borderColor = "purple"
+        }
+
+        function showAll() {
+            document.getElementById("box1").style.visibility = "visible"
+            document.getElementById("box2").style.visibility = "visible"
+            document.getElementById("box3").style.visibility = "visible"
+        }
+    </script>
+
+
+</body>
+
+</html>
